@@ -1,4 +1,4 @@
-print('Hello world from master')
+print('Hello world from b2')
 
 for i in range(10):
     print(i)
