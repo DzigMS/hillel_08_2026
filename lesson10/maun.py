@@ -37,8 +37,3 @@ print(f'objects count = {constants.OBJECT_COUNT}')
 print(f'Student count {Student.class_method()}')
 print(f'Student count2 {Student.get_user_count()}')
 
-print(Student.mro())
-
-user1.any_new_field = 100
-print(user1.any_new_field)
-# print(user2.any_new_field)

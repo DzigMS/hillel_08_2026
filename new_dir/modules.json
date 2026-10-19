@@ -1,0 +1,8 @@
+{
+    "name": "Vasiya",
+    "age": 21,
+    "pass": {
+        "id": 333,
+        "add": "Adress"
+    }
+}

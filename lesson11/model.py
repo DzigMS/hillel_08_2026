@@ -1,0 +1,2 @@
+class OwnError(Exception):
+    pass

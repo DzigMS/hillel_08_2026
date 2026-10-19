@@ -1,4 +1,4 @@
-from abc import ABCMeta, ABC
+from abc import ABCMeta, ABC, abstractmethod
 from datetime import datetime
 from urllib.request import Request
 
@@ -95,11 +95,14 @@ class MobilePhone(Phone):
 
 
 class Animal(ABC):
+
     def common_method(self):
         print('Common method')
 
+    @abstractmethod
     def voice(self):
         print('Voice from Animal')
+        raise NotImplementedError
 
 
 class Cat(Animal):
