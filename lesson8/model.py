@@ -2,6 +2,8 @@ from abc import ABCMeta, ABC, abstractmethod
 from datetime import datetime
 from urllib.request import Request
 
+from lesson17.models import RandomIterator
+
 COLORS = ['red', 'green', 'blue', 'ocean', 'yellow']
 BRANDS = ['BMW', 'Mercedes', 'Ferrari', 'Maclaren', 'ZaZ']
 
@@ -117,8 +119,18 @@ class Elephant(Animal):
     pass
 
 class Dog(Animal):
+
     def voice(self):
         print('Woof')
+
+    # def __iter__(self):
+    #     return RandomIterator([10, 11, 77, 33])
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        return self.voice()
 
     # def common_method(self):
     #     print('Common method')

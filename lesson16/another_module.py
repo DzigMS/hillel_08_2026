@@ -1,6 +1,3 @@
-from module import foo
 
-
-if __name__ == '__main__':
-    print("Start program")
-    foo()
+def func1():
+    print("func1")
